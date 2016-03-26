@@ -1,5 +1,9 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="15008000">
+	<Property Name="varPersistentID:{31F27E96-1719-46F4-9E46-C2D04674FBB5}" Type="Ref">/My Computer/Dashboard Main.vi/One Shot Rising with Input/error out</Property>
+	<Property Name="varPersistentID:{5D3D9EDB-2369-40D8-BCCD-708A04439488}" Type="Ref">/My Computer/Dashboard Main.vi/One Shot Rising with Input/input</Property>
+	<Property Name="varPersistentID:{C3D6F070-25A3-4D60-B378-CBE2BB86DF85}" Type="Ref">/My Computer/Dashboard Main.vi/One Shot Rising with Input/error in</Property>
+	<Property Name="varPersistentID:{F473A1DC-B272-4EA2-8E23-F6796FE2724A}" Type="Ref">/My Computer/Dashboard Main.vi/One Shot Rising with Input/output</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -20,7 +24,14 @@
 			<Item Name="Panel Resized.vi" Type="VI" URL="../Panel Resized.vi"/>
 			<Item Name="Adjust Dashboard Window.vi" Type="VI" URL="../Adjust Dashboard Window.vi"/>
 		</Item>
-		<Item Name="Dashboard Main.vi" Type="VI" URL="../Dashboard Main.vi"/>
+		<Item Name="Dashboard Main.vi" Type="VI" URL="../Dashboard Main.vi">
+			<Item Name="One Shot Rising with Input" Type="IIO Function Block">
+				<Item Name="error in" Type="Variable"/>
+				<Item Name="input" Type="Variable"/>
+				<Item Name="error out" Type="Variable"/>
+				<Item Name="output" Type="Variable"/>
+			</Item>
+		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
@@ -210,6 +221,13 @@
 				<Item Name="WPI_DashboardUpdate Command Params.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Dashboard/WPI_DashboardUpdate Command Params.vi"/>
 				<Item Name="WPI_DashboardUpdate RPC Info.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Dashboard/WPI_DashboardUpdate RPC Info.vi"/>
 				<Item Name="NT Update Persistence.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Update Persistence.vi"/>
+				<Item Name="Beep.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/Beep.vi"/>
+				<Item Name="NT Write Raw.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Raw.vi"/>
+				<Item Name="NT Write String Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write String Array.vi"/>
+				<Item Name="NT Write Numeric Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Numeric Array.vi"/>
+				<Item Name="NT Write Boolean Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Boolean Array.vi"/>
+				<Item Name="NT Write Boolean.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Boolean.vi"/>
+				<Item Name="NT Write Value.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Value.vi"/>
 			</Item>
 			<Item Name="Interpolate RGB Color.vi" Type="VI" URL="../Interpolate RGB Color.vi"/>
 			<Item Name="Playback Controls.vi" Type="VI" URL="../Playback Controls.vi"/>
@@ -248,7 +266,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/FRC_Dashboard/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Support/App EXE.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{30D03B27-784B-4100-8001-2DBC750C82DA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{DD886025-90AC-4028-9FAE-DC377AF87224}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Dashboard Main.vi</Property>
